@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css"/>
+    <meta name="keywords" content="web前端,个人博客,react"/>
+    <script type="text/javascript" src="../static/js/lib/require.min.js"></script>
+    <script type="text/javascript">
+        requirejs.config({
+            baseUrl: '../static/js/lib',
+            paths: {
+                'jquery': 'jquery.min',
+                'bootstrap':'bootstrap.min'
+            },
+            shim : {
+                "bootstrap" : { "deps" :['jquery']}
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div id="templatemo_site_title_bar_wrapper_outter">
+
+        <div id="templatemo_site_title_bar_wrapper_inner">
+
+            <div id="templatemo_site_title_bar">
+
+                <div id="templatemo_site_title_bar_top">
+                    <div id="site_title">
+                        <h1><a href="http://www.cssmoban.com" target="_blank">
+                            <!--   Fashion Blog <span>cssMoban.com</span>    -->
+                            <img src="/static/images/templatemo_logo.png" alt="website logo" />
+
+                        </a></h1>
+                    </div>
+
+                    <div id="search_box">
+                        <form action="#" method="get">
+                            <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                            <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" />
+                        </form>
+                    </div>
+                </div> <!-- end of templatemo_site_title_bar_top -->
+
+                <div id="templatemo_menu">
+                    <ul>
+                        <li><a href="#" class="current">博客主页</a></li>
+                        <li><a href="#">技术分享</a></li>
+                        <li><a href="http://www.cssmoban.com" target="_blank"></a></li>
+                        <li><a href="#" target="_blank">Gallery</a></li>
+                        <li><a href="#" class="last">Contact</a></li>
+                    </ul>
+                </div> <!-- end of menu -->
+
+            </div> <!-- end of templatemo_site_title_bar -->
+
+        </div> <!-- end of templatemo_site_title_bar_wrapper_inner -->
+
+    </div> <!-- end of templatemo_site_title_bar_wrapper_outter -->
+</header>
+<div class="container" layout:fragment="content"></div>
+<footer class="footer">
+    <div>
+        <p style="float: left">&copy; Hylun 2017</p>
+        <p style="float: right">
+            Powered by <a href="http://my.oschina.net/alun" target="_blank">Alun</a>
+        </p>
+    </div>
+</footer>
+<th:block layout:fragment="bodyAssets">
+
+</th:block>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="layout"
+>
+<head>
+    <title>Hello Thymeleaf!</title>
+</head>
+<body>
+<div layout:fragment="content" style="width:96%;margin-left:auto;margin-right:auto;">
+    dangren
+</div>
+<script layout:fragment="bodyAssets">
+    requirejs(['static/js/index.js'])
+</script>
+
+</body>
+</html>
