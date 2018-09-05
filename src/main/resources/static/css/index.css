@@ -60,15 +60,11 @@
 }
 .post_info {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-.post_info a {
-  color: #CCC;
-  padding: 0 2px;
-  background: #5b5952;
-}
-.post_info a:hover {
-  text-decoration: none;
+.post_info span {
+  margin-top: 10px;
+  color: #5d3206;
 }
 .post_content img {
   margin-bottom: 10px;
@@ -99,6 +95,8 @@
 }
 .side_menu li a {
   color: #000000;
+  width: 100%;
+  display: block;
 }
 .recent_post {
   color: #383737;
@@ -152,3 +150,58 @@
   background: url(/static/images/twitter_icon.png) right bottom no-repeat;
 }
 /* end of content */
+/**
+ * Slideshow style rules.
+ */
+#slideshow {
+  margin: 0 auto;
+  width: 900px;
+  height: 200px;
+  position: relative;
+}
+#slideshow #slidesContainer {
+  margin: 0 auto;
+  width: 750px;
+  height: 200px;
+  overflow: auto;
+  /* allow scrollbar */
+  position: relative;
+}
+#slideshow #slidesContainer .slide {
+  width: 680px;
+  /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height: 200px;
+  margin: 0 auto;
+}
+.slide img {
+  float: left;
+  margin-right: 40px;
+  border: 1px solid #4f4b42;
+}
+#slideshow #slidesContainer .slide a:hover {
+  text-decoration: none;
+}
+#slideshow #slidesContainer .slide a p {
+  color: #000;
+}
+/**
+ * Slideshow controls style rules.
+ */
+.control {
+  display: block;
+  width: 30px;
+  height: 200px;
+  text-indent: -10000px;
+  position: absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top: 85px;
+  left: 0;
+  background: transparent url(/static/images/slider_left_control.png) no-repeat 0 0;
+}
+#rightControl {
+  top: 85px;
+  right: 0;
+  background: transparent url(/static/images/slider_right_control.png) no-repeat 0 0;
+}

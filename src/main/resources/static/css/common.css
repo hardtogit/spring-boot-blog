@@ -65,6 +65,11 @@ img {
   width: 100%;
   height: 60px;
 }
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .fl {
   float: left;
 }
@@ -100,9 +105,10 @@ h1 {
 h2 {
   margin: 0 0 10px 0;
   padding: 2px 0;
-  font-size: 24px;
+  font-size: 18px;
+  letter-spacing: 1px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: normal;
   color: #fad40d;
 }
 h3 {
@@ -214,6 +220,7 @@ h4 {
 #searchbutton {
   height: 19px;
   width: 70px;
+  box-sizing: border-box !important;
   margin: 0px;
   padding: 2px 0 22px 0;
   cursor: pointer;
