@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../static/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/js/lib/highlightjs/styles/dark.css"/>
     <meta name="keywords" content="web前端,个人博客,react"/>
     <script type="text/javascript" src="../static/js/lib/require.min.js"></script>
     <script type="text/javascript">
@@ -13,10 +14,12 @@
             baseUrl: '../static/js/lib',
             paths: {
                 'jquery': 'jquery.min',
-                'bootstrap': 'bootstrap.min'
+                'bootstrap': 'bootstrap.min',
+                'highlight': 'highlightjs/highlight.pack'
             },
             shim: {
-                "bootstrap": {"deps": ['jquery']}
+                "bootstrap": {"deps": ['jquery']},
+                "highlight":{"deps": ['jquery']}
             }
         });
     </script>

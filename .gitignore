@@ -19,5 +19,6 @@ nbproject/private/
 build/
 nbbuild/
 dist/
+admin/
 nbdist/
 .nb-gradle/

@@ -1,5 +1,7 @@
 define(function (require,exports,module) {
     var $=require('jquery');
+          require('highlight');
+    hljs.initHighlightingOnLoad();
     //输入框事件
     $('#searchfield').on('focus blur',function () {
         var field=this;
