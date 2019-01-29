@@ -9,185 +9,92 @@
 </head>
 <body>
 <div layout:fragment="content">
-    <div id="templatemo_content_wrapper">
+    <div class="row" id="content">
+        <div class="col-lg-8 col-md-7 ">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
 
-        <div id="templatemo_content">
-
-            <div id="templatemo_popular_posts">
-
-                <div id="slideshow">
-                    <div id="slidesContainer">
-                        <div class="slide"> <a href="#"> <img src="/static/images/templatemo_image_06.jpg" alt="Image Title" width="380" height="190" />
-                            <h2>Lorem ipsum dolor sit</h2>
-                            <p>Vivamus vitae nibh eu sem malesuada rutrum et sit amet magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam velit a magna sodales quis elementum ipsum auctor. Ut at metus leo, et dictum sem.</p>
-                        </a> </div>
-                        <div class="slide"> <a href="#"> <img src="/static/images/templatemo_image_04.jpg" alt="Image Title" width="380" height="190" />
-                            <h2>Mauris aliquam ultrices lacus</h2>
-                            <p>Aenean fringilla vehicula felis, eu blandit tortor aliquam et. Nunc sed diam sed dui iaculis pharetra eu sed elit. Nunc arcu sapien, pellentesque at posuere nec, tincidunt dignissim enim. Ut sem mauris, aliquet ut sagittis vitae, condimentum eget augue. Donec sapien neque, egestas vitae auctor quis, pellentesque at augue.</p>
-                        </a> </div>
-                        <div class="slide"> <a href="#"> <img src="/static/images/templatemo_image_05.jpg" alt="Image Title" width="380" height="190" />
-                            <h2>Nullam pharetra adipiscing diam</h2>
-                            <p>Praesent at dui augue. Proin consectetur elementum sem, in blandit urna porta sed. Sed tortor ipsum, scelerisque vel lobortis aliquam, bibendum sit amet neque. In id erat in quam bibendum lacinia. Curabitur imperdiet viverra scelerisque. Phasellus quis egestas risus.</p>
-                        </a> </div>
-                        <div class="slide"> <a href="#"> <img src="/static/images/templatemo_image_03.jpg" alt="Image Title" width="380" height="190" />
-                            <h2>Pellentesque ut iaculis enim</h2>
-                            <p>Sed id tortor vitae nisi consectetur tempus. Pellentesque tellus est, adipiscing id porttitor vitae, vestibulum id neque. Aliquam tellus dui, vehicula sed placerat sed, scelerisque ultricies tortor. Donec ornare blandit erat pellentesque molestie. Suspendisse potenti. </p>
-                        </a> </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="/static/images/banner.jpg" alt="..."/>
+                        <div class="carousel-caption">
+                            最牛逼的广告词
+                        </div>
                     </div>
-                </div> <!-- end of slide show -->
-
-            </div> <!-- end of templatemo_popular_posts -->
-
-            <div id="templatemo_main_content_outter">
-
-                <div id="templatemo_main_content_inner">
-
-                    <div id="templatemo_main_column">
-
-                        <div class="post_section">
-                            <h2>清除缓存的几种方法</h2>
-                            <div class="post_info">
-                                2010-06-10 12:20  by <span>向然</span>
-                            </div>
-
-                            <div class="post_content">
-                                <img src="/static/images/templatemo_image_01.jpg" alt="image" />
-                                <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片或者布局，惊艳的js或者css3效果的时候，就有了做模板的冲动。</p>
-
-                                <div class="link_button"><a href="#">Continue reading...</a> | <a href="#">Comments (120)</a></div>
-                            </div>
-
-                        </div> <!-- end of a post -->
-
-                        <div class="post_section">
-                            <h2>个人博客，属于我的小世界！</h2>
-                            <div class="post_info">
-                                2010-06-10 12:20  by <span>向然</span>
-                            </div>
-
-                            <div class="post_content">
-                                <img src="/static/images/templatemo_image_02.jpg" alt="image" />
-                                <p>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</p>
-
-                                <div class="link_button"><a href="#">Continue reading...</a> | <a href="#">Comments (110)</a></div>
-                            </div>
-
-                        </div> <!-- end of a post -->
-
-                        <div class="cleaner"></div>
+                    <div class="item">
+                        <img src="/static/images/banner.jpg" alt="..."/>
+                        <div class="carousel-caption">
+                            你是最露比的
+                        </div>
                     </div>
-
-                    <div id="templatemo_side_column_01">
-
-                        <div class="side_column_01_section">
-
-                            <a href="#"><img src="/static/images/templatemo_200_200_ads.jpg" alt="ads" /></a>
-
-                        </div>
-
-                        <div class="side_column_01_section">
-                            <h3>站内导航</h3>
-                            <ul class="side_menu">
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">个人博客，用来做什么？我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">我刚开始就把它当做一个我</a></li>
-                                <li><a href="#" class="ellipsis">Vivamus sagittis varius lorem</a></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="side_column_01_section">
-
-                            <h3>心情随笔</h3>
-                            <div class="recent_post">
-                                <h4><a href="#">个人博客，属于我的小世界！</a></h4>
-                                个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
-                            </div>
-                            <div class="recent_post">
-                                <h4><a href="#">清除缓存的几种方法</a></h4>
-                                自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片或者布局，惊艳的js或者css3效果的时候，就有了做模板的冲动。</div>
-
-                        </div>
-
-                        <div class="cleaner"></div>
-                    </div>
-
-                    <div class="cleaner"></div>
-                </div> <!-- end of templatemo_main_content_inner -->
-
-                <div class="cleaner"></div>
-            </div> <!-- end of templatemo_main_content_outter -->
-
-            <div id="templatemo_side_column_02">
-
-                <div class="side_column_02_section">
-
-                    <div class="side_column_02_section_content">
-
-                        <div class="section_rss_twitter twitter">
-                            <a href="#">FOLLOW ME <span>on twitter</span></a>
-                        </div>
-
-                        <div class="margin_bottom_20"></div>
-
-                        <div class="section_rss_twitter rss">
-                            <a href="#">SUBSCRIBE <span>rss feed</span></a>
-                        </div>
-
-                    </div>
-
                 </div>
 
-                <div class="side_column_02_section">
-
-                    <h3>热门文章</h3>
-
-                    <div class="side_column_02_section_content">
-                        <ul class="side_menu">
-                            <li><a href="http://www.cssmoban.com" target="_blank">react生命周期</a></li>
-                            <li><a href="#" target="_parent">spring-boot的简单配置</a></li>
-                            <li><a href="#/slideshow" target="_blank">Flash Photo Gallery</a></li>
-                            <li><a href="#" target="_parent">Web Design Blog</a></li>
-                            <li><a href="#" target="_blank">Best Flash Gallery</a></li>
-                        </ul>
-                    </div>
-
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="media article" th:each="article : ${articles}" th:data="${article.id}">
+                <div class="media-left" >
+                    <a href="#">
+                        <img class="media-object" width="120" height="90" th:src="${article.cover}" alt="..."/>
+                    </a>
                 </div>
-
-                <div class="side_column_02_section">
-
-                    <h3>最近发表</h3>
-
-                    <div class="side_column_02_section_content">
-
-                        <div class="recent_post">
-                            <h4><a href="#">个人博客，属于我的小世界！</a></h4>
-                            个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
+                <div class="media-body">
+                    <h4 class="media-heading" th:text="${article.title}">标题</h4>
+                    <span th:text="${article.description}"></span>
+                    <div class="article-info">
+                           <div class="pull-left">
+                               <i class="fa fa-user" aria-hidden="true"></i><span th:text="${article.addUser}"></span>
+                           </div>
+                        <div class="pull-right">
+                            <i class="fa fa-eye" aria-hidden="true"></i><span th:text="${article.scan}"></span>
+                            <i class="fa fa-commenting" aria-hidden="true"></i> 222</div>
                         </div>
-                        <div class="recent_post">
-                            <h4><a href="#">个人博客，属于我的小世界！</a></h4>
-                            个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
-                        </div>
-
-                        <div class="cleaner_h10"></div>
-
-                        <div class="button_02 fl margin_r_10"><a href="#">Submit</a></div> <div class="button_02 fl"><a href="#">More</a></div>
-
-                    </div>
-
                 </div>
-
-            </div> <!-- end of templatemo_side_column_02 -->
-
-            <div class="cleaner"></div>
-        </div> <!-- end of templatemo_content -->
-
-        <div class="cleaner"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-5 hidden-sm">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">热门文章</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">前端技术的的大</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">最新发布</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">前端技术的的大</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script layout:fragment="bodyAssets">
