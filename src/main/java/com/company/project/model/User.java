@@ -1,8 +1,5 @@
 package com.company.project.model;
 
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
-
 import java.util.Date;
 import javax.persistence.*;
 
@@ -23,10 +20,6 @@ public class User {
     @Column(name = "register_date")
     private Date registerDate;
 
-    private Role role;
-    public User() {
-        super();
-    }
     /**
      * @return id
      */
@@ -111,15 +104,4 @@ public class User {
         this.registerDate = registerDate;
     }
 
-    @NotFound(action = NotFoundAction.IGNORE)
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "roleId")
-//    @JsonIgnore
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
 }
