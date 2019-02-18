@@ -45,7 +45,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="media article" th:each="article : ${articles}" th:data="${article.id}">
+            <div class="media article" th:each="article : ${pageInfo.list}" th:data="${article.id}">
                 <div class="media-left" >
                     <a href="#">
                         <img class="media-object" width="120" height="90" th:src="${article.cover}" alt="..."/>
@@ -64,6 +64,7 @@
                         </div>
                 </div>
             </div>
+            <div th:utext="${pagination}" ></div>
         </div>
         <div class="col-lg-4 col-md-5 hidden-sm">
             <div class="panel panel-default">
