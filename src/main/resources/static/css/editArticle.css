@@ -1,0 +1,66 @@
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 6px;
+}
+.panel-heading {
+  height: auto !important;
+}
+.up-img {
+  position: relative;
+  overflow: hidden;
+}
+.col-lg-10 {
+  padding: 0;
+}
+.col-lg-8 {
+  margin-top: 10px;
+}
+.col-lg-2 {
+  padding: 0;
+  text-align: center;
+  padding-top: 4px;
+}
+input[type=radio] {
+  margin-left: 0!important;
+}
+.up-img input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#img-content {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+#img-content img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.position-block {
+  padding-left: 106px;
+  line-height: 1.4;
+}
+.backdrop img {
+  line-height: 100%;
+}
